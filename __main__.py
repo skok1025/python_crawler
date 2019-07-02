@@ -6,6 +6,7 @@ from datetime import datetime
 from itertools import count
 from urllib.request import Request, urlopen
 
+import numpy
 import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -89,7 +90,7 @@ def crawling_nene():
         if countboard != 24:
             break
         countboard = 0
-
+ ###
     table = pd.DataFrame(result, columns=['name', 'address'])
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     RESULT_DIR = f'{BASE_DIR}__results__'
