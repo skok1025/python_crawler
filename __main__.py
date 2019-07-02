@@ -6,7 +6,7 @@ from datetime import datetime
 from itertools import count
 from urllib.request import Request, urlopen
 
-import numpy
+
 import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
